@@ -1,0 +1,6 @@
+Changelog for degoyaTag
+
+degoyaTag 1.0.0
+====================================
+
+- Initial release

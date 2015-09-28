@@ -1,0 +1,7 @@
+degoyaTag
+
+This custom TV field is an alternative to the defaul Tag field type.
+
+Install via Package Management. Simply create a new TV with the input type & output type set to degoyaTag. 
+
+For extra more documentation view the readme.txt
