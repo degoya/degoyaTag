@@ -1,8 +1,9 @@
 <input id="tv{$tv->id}" name="tv{$tv->id}"
-    type="text" class="textfield"
-    value="{$tv->get('value')|escape}"
-    {$style}
-    tvtype="{$tv->type}"
+	type="text" class="textfield"
+        style="display:none;"
+	value="{$tv->get('value')|escape}"
+	{$style}
+	tvtype="{$tv->type}"
 />
 <div id="tv-tags-{$tv->id}"></div>
 
@@ -15,7 +16,6 @@ Ext.onReady(function() {
         xtype: 'textfield'
         ,applyTo: 'tv{$tv->id}'
         ,width: '99%'
-        ,hidden: true
         ,id: 'tv{$tv->id}'
         ,enableKeyEvents: true
         ,msgTarget: 'under'
@@ -38,14 +38,11 @@ Ext.onReady(function() {
 // ]]>
 </script>
 
-
-
 <ul class="modx-tag-list" id="tv-{$tv->id}-tag-list">
-{foreach from=$opts item=item key=k name=cbs}
+{foreach from=$options item=item key=k name=cbs}
     <li class="modx-tag-opt{if $item.checked} modx-tag-checked{/if}" title="{$item.value}">{$item.text}</li>
 {/foreach}
 </ul>
-
 
 <script type="text/javascript">
 // <![CDATA[
