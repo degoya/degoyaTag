@@ -1,13 +1,13 @@
 ----------------------------
 Extra: degoyaTag
 ----------------------------
-Version: 1.0.0
-Released: 2015-09-02
-Author: Alexander Herling / DEGOYA medienkommunikation oHG <a.herling@degoya.de>
+Version: 1.0.1
+Released: 2023-01-03
+Author: Alexander Herling / DEGOYA.digital <a.herling@degoya.de>
 License: GNU GPLv2 (or later at your option)
 
 About
-A custom Tag template variable field type for MODX Revolution (2.3+).
+A custom Tag template variable field type for MODX Revolution (2.8.4+).
 Use as an alternative to the 'Tag' TV field type, especially useful when you like to hide the input and allow only predefined tags.
  
 Features
