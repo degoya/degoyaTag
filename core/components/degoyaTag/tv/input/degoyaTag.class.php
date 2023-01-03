@@ -1,18 +1,13 @@
+<?php
 /*
  * DegoyaTag custom TV - input setup
  *
  * @var modX $this->modx
  * @var modTemplateVar $this
- *
+ * 
  */
+class DegoyaTagInputRender extends modTemplateVarInputRender {
 
-/**
- * @var string|array $value
- * @package modx
- * @subpackage processors.element.tv.renders.mgr.input
- */
-class modTemplateVarInputRenderTag extends modTemplateVarInputRender
-{
     /**
      * @param string|array $value
      * @param array $params
@@ -41,13 +36,9 @@ class modTemplateVarInputRenderTag extends modTemplateVarInputRender
         $this->setPlaceholder('options', $options);
     }
 
-    /**
-     * @return string
-     */
-    public function getTemplate()
-    {
-        return 'element/tv/renders/input/tag.tpl';
+
+    public function getTemplate() {
+        return $this->modx->getOption('core_path',null,MODX_CORE_PATH).'components/degoyaTag/tv/input/tpl/degoyaTag.tpl';
     }
 }
-
-return 'modTemplateVarInputRenderTag';
+return 'DegoyaTagInputRender';
