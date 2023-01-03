@@ -1,5 +1,11 @@
 Changelog for degoyaTag
 
+
+degoyaTag 1.0.1
+====================================
+
+- fixed php 8 problems
+
 degoyaTag 1.0.0
 ====================================
 
